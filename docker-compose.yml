@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  websocker:
+    build:
+      context: .
+    volumes:
+      - ./app:/app
+    ports:
+      - "8765:8765"
